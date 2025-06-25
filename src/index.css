@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root{
-  --background-color: #1c1820;
-  --primary: #334434;
+  --background-color: #ffffff;
+  --primary: #222c1d;
   --accent: rgb(180, 240, 59);
   --default-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.412);
 
-  color: white;
+  color: rgb(3, 0, 0);
 }
 
 ::-webkit-scrollbar {
@@ -42,7 +42,19 @@ nav{
   z-index: 9;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.324);
+  a, button{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }  
+}
+
+.nav-non-home{
+  background-color: #00000000;
+  backdrop-filter: blur(20px);
+  a, button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
 }
 
 main{
@@ -51,11 +63,6 @@ main{
 
 button{
   color: none;
-}
-
-a, button{
-  text-decoration: none;
-  color: white;
 }
 
 /* @media (prefers-color-scheme: light) {

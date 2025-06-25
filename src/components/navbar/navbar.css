@@ -7,7 +7,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
+    
     ul{
         display: flex;
         gap: 1em;
@@ -37,7 +37,7 @@
 
     span{
         height: 100%;
-        font-size: 1rem;
+        font-size: 1.1rem;
         display: grid;
         place-items: center;
         text-transform: capitalize;
@@ -78,7 +78,8 @@
     top: 8vh;
     display: none;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.324); 
+    background-color: --background-color;
+    backdrop-filter: blur(20px);
     list-style-type: none;
 
     button{

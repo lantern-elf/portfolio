@@ -24,14 +24,12 @@ const Artworks = () => {
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column"
                 >
-                    {
-                        artworkData.map((image) => (
-                            <div key={image.id} className="pin">
-                                <img className="artwork-img" src={image.url} />
-                                <span>{image.caption}</span>
-                            </div>
-                        ))
-                    }
+                    {artworkData.map((image) => (
+                        <div key={image.id} className="pin">
+                            <img className="artwork-img" src={image.url} />
+                            <span>{image.caption}</span>
+                        </div>
+                    ))}
                 </Masonry>
             </main>
         </>

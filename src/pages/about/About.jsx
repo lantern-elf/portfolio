@@ -36,7 +36,7 @@ const About = () => {
                         <a className="bluesky-icon" href="https://bsky.app/profile/lanternelf.bsky.social" target="black"><FontAwesomeIcon icon={faBluesky} /></a>
                         <a className="facebook-icon" href="https://www.facebook.com/lanternelf" target="black"><FontAwesomeIcon icon={faFacebook} /></a>
                         <a className="github-icon" href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a className="artstation-icon" href="https://github.com/lantern-elf" target="black"><FontAwesomeIcon icon={faArtstation} /></a>
+                        <a className="artstation-icon" href="https://www.artstation.com/lantern_elf" target="black"><FontAwesomeIcon icon={faArtstation} /></a>
                     </div>
                 </div>
             </main>

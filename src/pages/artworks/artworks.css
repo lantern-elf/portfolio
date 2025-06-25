@@ -1,6 +1,6 @@
 .gallery-wrapper {
     padding-top: 9vh;
-    padding-inline: 2vw;
+    padding-inline: 5vw;
 }
 
 .my-masonry-grid {
@@ -34,11 +34,10 @@
 } */
 
 .pin{
-    columns: 300px;
-    margin-bottom: 1vw;
+    /* columns: 200px; */
+    margin-bottom: 1.2vw;
     & img {
-        border-radius: .5em;
-        box-shadow: var(--dafault-box-shadow);
+        /* box-shadow: var(--dafault-box-shadow); */
         background-color: var(--primary);
         width: 100%;
         height: auto;
@@ -46,7 +45,9 @@
         transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     span{
-        font-size: .8rem;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "Open Sans";
     }
 
 }

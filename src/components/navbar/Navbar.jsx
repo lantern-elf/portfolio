@@ -31,7 +31,7 @@ const Navbar = ({ home = false, artworks = false, codes = false, about = false})
 
     return(
         <>
-            <nav className='wrapper'>
+            <nav className={`${home ? "" : "nav-non-home"} wrapper`}>
                     <ul className="logo">
                         <a href="/">
                             <img src="./Emblem.png"/>
