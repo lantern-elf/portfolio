@@ -10,6 +10,7 @@
 
 @theme {
   --color-accent: #57c275;
+  --font-logo: "Libertinus Mono"
 }
 
 html, body, #root {

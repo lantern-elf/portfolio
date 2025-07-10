@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = ({ home = false, artWorks = false, aboutMe = false }) => {
     const navigate = useNavigate()
     return (
-        <nav className="bg-white top-0 sticky z-[999] shadow-sm">
+        <nav className="bg-opacity-[0] top-0 sticky z-[999] backdrop-blur-md shadow-sm">
             <div className="flex items-center justify-between px-4 h-[8vh]">
                 {/* Logo / Title */}
                 <div className="flex-shrink-0">
-                    <a href='/' className="text-[18px] place-items-center text-center flex gap-1 text-xl tracking-[.01em] cursor-pointer">
-                        <img src="public/emblem.png" alt="" className='w-10' />
-                        Lantern Elf
+                    <a href='/' className="place-items-center text-center flex gap-2 cursor-pointer">
+                        <img src="public/emblem_black_bg.png" alt="" className='w-8' />
+                        <span className='text-[20px]'>Lantern Elf</span>
                     </a>
                 </div>
                 {/* Links */}

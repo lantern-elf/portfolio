@@ -15,7 +15,7 @@ const Home = () => {
               2D Artist, Concept Artist & Programmer
             </p>
             <div className="mt-4 flex gap-4 sm:mt-6">
-              <a className="inline-block rounded cursor-pointer bg-accent px-3 py-2 font-medium transition-color">
+              <a className="inline-block rounded cursor-pointer bg-accent px-3 py-2 font-medium transition-color shadow">
                 Explore
               </a>
             </div>
