@@ -9,19 +9,19 @@ const Navbar = ({ home = false, artWorks = false, aboutMe = false }) => {
                 {/* Logo / Title */}
                 <div className="flex-shrink-0">
                     <a href='/' className="place-items-center text-center flex gap-2 cursor-pointer">
-                        <img src="public/emblem_black_bg.png" alt="" className='w-8' />
+                        <img src="/emblem_black_bg.png" alt="" className='w-8' />
                         <span className='text-[20px]'>Lantern Elf</span>
                     </a>
                 </div>
                 {/* Links */}
                 <div className="hidden md:flex items-center space-x-2">
-                    <button onClick={() => navigate("/")} className={`cursor-pointer p-1 px-2 rounded ${home ? 'bg-accent shadow' : ''}`}>
+                    <button onClick={() => navigate("/")} className={`cursor-pointer py-1 px-2 rounded ${home ? 'bg-accent shadow' : ''}`}>
                         Home
                     </button>
-                    <button onClick={() => navigate("/artworks")} className={`cursor-pointer p-1 px-2 rounded ${artWorks ? 'bg-accent shadow' : ''}`}>
+                    <button onClick={() => navigate("/artworks")} className={`cursor-pointer py-1 px-2 rounded ${artWorks ? 'bg-accent shadow' : ''}`}>
                         Artworks
                     </button>
-                    <button onClick={() => navigate("/about")} className={`cursor-pointer p-1 px-2 rounded ${aboutMe ? 'bg-accent shadow' : ''}`}>
+                    <button onClick={() => navigate("/about")} className={`cursor-pointer py-1 px-2 rounded ${aboutMe ? 'bg-accent shadow' : ''}`}>
                         About
                     </button>
                 </div>

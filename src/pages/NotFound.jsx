@@ -1,16 +1,18 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const NotFound = () => {
   return (
     <>
       <Navbar />
-      <div class="grid place-items-center h-[92vh]">
+      <main class="grid place-items-center min-h-[92vh]">
         <div className="text-center">
-          <p className="text-5xl font-semibold text-indigo-600">404</p>
-          <h1 className="mt-4 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Page not found</h1>
+          <p className="text-9xl font-semibold text-accent">404</p>
+          <h1 className="mt-2 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-4xl">Page not found</h1>
         </div>
-      </div>
+      </main>
+      <Footer />
     </>
   )
 }

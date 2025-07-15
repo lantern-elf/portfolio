@@ -1,13 +1,12 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import RouterPage from './router';
-import Navbar from './components/Navbar';
-
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <BrowserRouter>
-        <RouterPage /> 
+      <RouterPage /> 
     </BrowserRouter>
   );
 };
