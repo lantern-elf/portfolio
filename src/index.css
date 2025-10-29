@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
 
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
     font-family: "Open Sans";
 }
 
 @theme {
-  --color-accent: #7FB981;
+  --color-accent: #55d97c;
   --font-logo: "Libertinus Mono"
 }
 
@@ -22,4 +23,5 @@ html, body, #root {
 
 body{
   background-color: #ffffff;
+  color: black;
 }

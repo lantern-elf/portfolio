@@ -1,44 +1,69 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faInstagram, faFacebook, faBluesky, faItchIo } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
   return (
-    <> 
+    <>
       <Navbar aboutMe={true} />
-      <main className='min-h-[92vh]'>
-        <section className="flex flex-col justify-center max-w-xl h-[92vh] mx-auto my-auto px-4 text-gray-900 text-center">
-          <img
-            src="public/profile_picture.png"
-            alt="Your Portrait"
-            className="mx-auto mb-5 w-48 rounded-[50%]"
-          />
 
-          <h1 className="text-3xl font-bold mb-4">About Me</h1>
+      <main className="min-h-[94vh] flex flex-col">
+        <section className="max-w-5xl mx-auto px-6 py-16 text-gray-900">
+          <h2 className="text-4xl mb-4 relative left-0 text-center md:text-left md:left-50">About</h2>
 
-          <p className="text-base leading-relaxed mb-4">
-            I'm Lantern, a 2D artist and game developer based on Indonesia.
-            I enjoy creating arts, websites, and games.
-          </p>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+            {/* Profile image */}
+            <img
+              src="image/profile_picture.png"
+              alt="Your Portrait"
+              className="w-40 h-40 object-cover"
+            />
 
-          <p className="text-base leading-relaxed mb-4">
-            I'm currently working on my own game and open to new creative opportunities.
-          </p>
+            {/* Text content */}
+            <div className="text-[1rem] leading-relaxed">
+              <p className="mb-4 text-justify">
+                I am <strong>Lantern</strong>, a 2D artist and programmer based in Indonesia.  
+                I specialize in art and coding, with expertise in illustrations, concept art, and game development.  
+                I enjoy creating art and games that tell stories and spark imagination.
+              </p>
 
-          <p className="font-medium">
-            Contact: <a href="mailto:lanternelf@gmail.com" className="text-blue-600 underline">lanternelf@gmail.com</a>
-          </p>
+              <p className="mb-4 text-justify">
+                I am currently <span className="font-medium">open to new work opportunities</span>  
+                and enthusiastic about collaborating on exciting projects.  
+                Check <a className="underline" href="https://vgen.co/lantern_elf" target="_blank" rel="noreferrer">here</a> for details.
+              </p>
 
-          <div className="flex justify-center gap-4 mt-4 text-2xl">
-            <a href="#" aria-label="Instagram" className="hover:text-blue-600"></a>
-            <a href="#" aria-label="Twitter" className="hover:text-blue-600"></a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-blue-600"></a>
+              <p className="font-medium mb-6">
+                Contact: <a href="mailto:lanternelf@gmail.com" className="underline">lanternelf@gmail.com</a>
+              </p>
+
+              {/* Social icons */}
+              <div className="flex flex-wrap gap-5 md:justify-start justify-center">
+                <a href="https://twitter.com/lantern_elf" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon className="text-2xl hover:text-blue-500 transition-colors" icon={faTwitter} />
+                </a>
+                <a href="https://instagram.com/lantern_elf" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon className="text-2xl hover:text-pink-500 transition-colors" icon={faInstagram} />
+                </a>
+                <a href="https://facebook.com/lanternelf" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon className="text-2xl hover:text-blue-700 transition-colors" icon={faFacebook} />
+                </a>
+                <a href="https://bsky.app/profile/lanternelf.bsky.social" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon className="text-2xl hover:text-sky-400 transition-colors" icon={faBluesky} />
+                </a>
+                <a href="https://lantern-elf.itch.io" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon className="text-2xl hover:text-[#fa5c5c] transition-colors" icon={faItchIo} />
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
+
       <Footer />
     </>
-    
   )
 }
 

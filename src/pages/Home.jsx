@@ -6,27 +6,26 @@ const Home = () => {
   return (
     <>
       <Navbar home={true} />
-      <main className='min-h-[92vh]'>
+      <main className='min-h-[94vh]'>
         {/* Landing Start */}
-        <section className="bg-[url(/public/bg.png)] justify-end flex flex-col bg-center bg-cover lg:grid lg:h-[92vh] lg:place-content-center">
-          <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 lg:px-8 lg:py-32">
-            <div className="max-w-[50%]">
-              <h1 className="text-5xl font-bold text-black text-shadow-2xs sm:text-7xl text-right">
+        <section className="bg-[url(/public/image/bg.png)] justify-end flex flex-col bg-center bg-cover h-[94vh] lg:place-content-center">
+          {/* <div className="mx-auto w-screen max-w-screen-xl py-16 lg:py-32 place-items-end">
+            <div className="lg:max-w-[50%] md:max-w-[50%] sm:max-w-full grid place-items-end">
+              <span className="lg:text-7xl md:text-5xl text-3xl font-bold text-black text-shadow-2xs sm:text-center lg:text-right">
                 Lantern Elf's Portfolio
-              </h1>
-              <p className="mt-4 text-base text-pretty text-shadow-2xs text-black sm:text-lg/relaxed text-right">
-                2D Artist & Programmer
+              </span>
+              <p className="mt-4 lg:text-[1.3em] text-pretty text-shadow-2xs text-black sm:text-[1em] /relaxed text-left">
+                2D Artist, Concept Artist & Programmer
               </p>
-              <div className="mt-4 flex gap-4 sm:mt-6 justify-end">
+              <div className="mt-4 flex gap-4 sm:mt-6">
                 <a className="inline-block rounded cursor-pointer bg-accent px-3 py-2 font-medium transition-color shadow">
                   Explore
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         {/* Landing End */}
-        
       </main>
       <Footer />
     </>
