@@ -17,6 +17,7 @@ const Illustration = () => {
           <img src="image/illustrations/shore.png" alt="" className='select-none pointer-events-none' />
           <img src="image/illustrations/blue hour.png" alt="" className='select-none pointer-events-none' />
           <img src="image/illustrations/shadows.png" alt="" className='select-none pointer-events-none' />
+          <img src="image/illustrations/A & 20.png" alt="" className='select-none pointer-events-none' />
         </div>
       </main>
       <Footer />
