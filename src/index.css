@@ -1,27 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
 
-@import "tailwindcss";
-@plugin "daisyui";
+:root{
+  --background-color: #ffffff;
+  --primary: #222c1d;
+  --accent: rgb(144, 215, 0);
+  --default-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.412);
 
-:root {
-    font-family: "Open Sans";
+  color: rgb(3, 0, 0);
+  font-family: "Open Sans";
 }
 
-@theme {
-  --color-accent: #55d97c;
-  --font-logo: "Libertinus Mono"
+::-webkit-scrollbar {
+  position: fixed;
+  top: 0;
+  width: 0px;
+  background-color: #334434;
 }
 
-html, body, #root {
-  height: 100vh;
-  margin: 0;
+*, html{
   padding: 0;
-  overflow-x: hidden;
+  margin: 0;
+  font-weight: 200;
+  scroll-behavior: smooth;
 }
 
-body{
-  background-color: #ffffff;
-  color: black;
+body {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: var(--background-color) ;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  a, button{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }  
+}
+
+.nav-non-home{
+  background-color: #00000000;
+  backdrop-filter: blur(20px);
+  a, button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+}
+
+main{
+  height: 100vh;
+}
+
+button{
+  color: none;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root{
+    color: rgb(0, 0, 0);
+  }
+  body{
+    background-color: #ffffff;
+  }
+  nav{
+    background-color: #ffffff60;
+  }
+  a, button{
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    color: white;
+  }
+  body{
+    background-color: var(--background-color);
+  }
+  nav{
+    background-color: #00000046;
+  }
+  a, button{
+    color: white;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  :root{
+    font-size: 13px;
+  }
 }

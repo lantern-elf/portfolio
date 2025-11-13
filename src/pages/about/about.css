@@ -1,0 +1,203 @@
+.pages-wrapper{
+    width: 100vw;
+    height: 92vh;
+    padding-top: 8vh;
+    display: grid;
+}
+
+.about{
+    display: grid;
+    grid-template-areas: 'proPict title title'
+                         'proPict bio bio'
+                         'proPict links links';
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 25% 50%;
+    width: 75%;
+    height: 60%;
+    margin: auto;
+    padding: 1em;
+    background-color: var(--primary);
+    border-radius: .5em;
+    box-shadow: var(--default-box-shadow);
+}
+
+/* .about div{
+    border: white dashed .5px;
+} */
+
+.about-title{
+    grid-area: title;
+    text-transform: uppercase;
+    font-size: 2rem;
+    display: grid;
+    place-items: end left;
+    color: var(--accent);
+
+}
+
+.profile-picture{
+    position: relative;
+    grid-area: proPict;
+    display: grid;
+    place-items: center;
+}
+
+.profile-picture a{
+    display: contents;
+}
+
+.image-wrapper{
+    display: grid;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    width: 85%;
+    place-items: center;
+}
+
+.image-wrapper::before{
+    content: "";
+    width: 90%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border: dashed white 1px;
+    border-radius: 50%;
+    z-index: 9;
+    animation: rotate 20s linear infinite;
+} @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+.image-wrapper img{
+    width: 100%;
+    border-radius: 50%;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-wrapper:hover img{
+    transform: scale(1.05);
+}
+
+.about-info{
+    grid-area: bio;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center left;
+    font-family: "Open Sans";
+    color: #ffffff;
+}
+
+.about-links{
+    grid-area: links;
+    display: flex;
+    place-items: center;
+    font-size: 1.2rem;
+    gap: .5em;
+}
+
+.about-links a{
+    border-radius: 50%;
+    border: white .2px solid;
+    height: 2em;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    transition: .3s ease-in-out;
+    color: #ffffff;
+}
+
+.about-links a:hover{
+    transform: translateY(-.3em);
+}
+
+.twitter-icon:hover{
+    border-color: #1DA1FA;
+    color: #1DA1F2;
+
+}
+.instagram-icon:hover{
+    border-color: #E4405F;
+    color: #E4405F;
+
+}
+.bluesky-icon:hover{
+    border-color: #87CEEB;
+    color: #87CEEB;
+
+}
+.facebook-icon:hover{
+    border-color: #1877F2;
+    color: #1877F2;
+
+}
+/* .github-icon:hover{
+    border-color: #181717;
+    color: #181717;
+
+} */
+.artstation-icon:hover{
+    border-color: #3877ff;
+    color: #3877ff;
+}
+
+.about-info b{
+    font-weight: 900;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .about {
+        grid-template-areas: 
+            'proPict'
+            'title'
+            'bio'
+            'links';
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto; /* let content dictate height */
+        padding: 1em;
+        margin: 1em auto;
+    }
+
+    .image-wrapper {
+        width: 55%;
+    }
+
+    .image-wrapper::before {
+        width: 60%;
+    }
+
+    .about-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .about-info {
+        place-items: start center;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: "Open Sans";
+    }
+
+    .about-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.7em;
+    }
+
+    .about-links a {
+        font-size: 1.1rem;
+        height: 2.5em;
+    }
+}
