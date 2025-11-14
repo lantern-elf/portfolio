@@ -10,7 +10,7 @@ const About = () => {
       <Navbar aboutMe={true} />
 
       <main className="min-h-[94vh] flex flex-col">
-        <section className="max-w-5xl mx-auto px-6 py-4 md:py-16 text-gray-900">
+        <section className="max-w-5xl mx-auto px-6 md:px-20 lg:px-40 py-4 md:py-16 text-gray-900">
           <h3 className="md:text-4xl text-3xl mb-4 relative left-0 text-center md:text-left md:left-46">About</h3>
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-5">
@@ -32,14 +32,11 @@ const About = () => {
               <p className="mb-4 text-justify">
                 I am currently <strong>open to work</strong> opportunities  
                 and enthusiastic about collaborating on exciting projects.  
-                Check <a className="underline" href="https://vgen.co/lantern_elf" target="_blank" rel="noreferrer">here</a> for commissions 
-                details, or contact me.
-              </p>
-              <p className="font-medium">
-                Commission: <a href="https://vgen.co/lantern_elf" target='blank' className="underline">vgen.co/lantern_elf</a>
+                contact me or check here for <a className="underline" href="https://vgen.co/lantern_elf" target="_blank" rel="noreferrer">commissions 
+                details</a>.
               </p>
               <p className="font-medium mb-6">
-                Contact: <a href="mailto:lanternelf@gmail.com" target='blank' className="underline">lanternelf@gmail.com</a>
+                <b>Contact: </b><a href="mailto:lanternelf@gmail.com" target='blank' className="underline">lanternelf@gmail.com</a>
               </p>
 
               {/* Social icons */}

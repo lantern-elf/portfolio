@@ -7,7 +7,7 @@ const Illustration = () => {
     <>
       <Navbar illustration={true} />
       <main className='min-h-[94vh] grid lg:place-items-center' >
-        <div className='lg:w-[45%] flex flex-col lg:gap-1 lg:py-1 sm:py-2'>
+        <div className='lg:w-[50%] flex flex-col lg:gap-1 lg:py-1 sm:py-2'>
           <img src="image/illustrations/manatee.png" alt="" className='select-none pointer-events-none' />
           <img src="image/illustrations/painting study cerry.png" alt="" className='select-none pointer-events-none' />
           <img src="image/illustrations/kris  -  deltarune_.png" alt="" className='select-none pointer-events-none' />
