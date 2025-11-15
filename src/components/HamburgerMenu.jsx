@@ -12,7 +12,7 @@ const HamburgerMenu = ({ isOpen, onClose, home, conceptArt, illustration, game, 
       ${isScrolled ? 'bg-opacity-[0] backdrop-blur-md' : 'bg-white'}`}
     >
       <div className="flex flex-col p-6 space-y-4">
-        <a onClick={() => { navigate('/concept-art'); onClose(); }} className={`text-lg font-medium ${home? 'underline' : ''} cursor-pointer hover:underline`}>
+        <a onClick={() => { navigate('/'); onClose(); }} className={`text-lg font-medium ${home? 'underline' : ''} cursor-pointer hover:underline`}>
           Home
         </a>
         <a onClick={() => { navigate('/concept-art'); onClose(); }} className={`text-lg font-medium ${conceptArt? 'underline' : ''} cursor-pointer hover:underline`}>
