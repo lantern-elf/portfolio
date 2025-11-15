@@ -11,7 +11,7 @@ const About = () => {
 
       <main className="min-h-[94vh] flex flex-col">
         <section className="max-w-5xl mx-auto px-6 md:px-20 lg:px-40 py-4 md:py-16 text-gray-900">
-          <h3 className="md:text-4xl text-3xl mb-4 relative left-0 text-center md:text-left md:left-46">About</h3>
+          <h5 className="md:text-3xl text-3xl mb-4 relative left-0 text-center md:text-left md:left-45">About</h5>
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-5">
             {/* Profile image */}
@@ -24,8 +24,8 @@ const About = () => {
             {/* Text content */}
             <div className="text-[1rem] leading-relaxed">
               <p className="mb-4 text-justify">
-                Hello, I am <strong>Lantern</strong>, a <strong>2D Artist</strong> and <strong>Programmer</strong> based in Indonesia.  
-                I do art and game development, with expertise in illustrations, concept art, and 2D game development in Godot Engine.  
+                Hello, I am <strong>Lantern</strong>, a <strong>2D Artist</strong> and <strong>Concept Artist</strong> based in Indonesia.  
+                I do art with expertise in illustrations and concept art.  
                 I enjoy creating art and games that tell stories and spark imagination.
               </p>
 
