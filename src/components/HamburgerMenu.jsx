@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const HamburgerMenu = ({ isOpen, onClose, conceptArt, illustration, game, about }) => {
+const HamburgerMenu = ({ isOpen, onClose, home, conceptArt, illustration, game, about }) => {
   const navigate = useNavigate()
   const isScrolled = typeof window !== 'undefined' && window.scrollY > 0
   return (
@@ -12,6 +12,9 @@ const HamburgerMenu = ({ isOpen, onClose, conceptArt, illustration, game, about 
       ${isScrolled ? 'bg-opacity-[0] backdrop-blur-md' : 'bg-white'}`}
     >
       <div className="flex flex-col p-6 space-y-4">
+        <a onClick={() => { navigate('/concept-art'); onClose(); }} className={`text-lg font-medium ${home? 'underline' : ''} cursor-pointer hover:underline`}>
+          Home
+        </a>
         <a onClick={() => { navigate('/concept-art'); onClose(); }} className={`text-lg font-medium ${conceptArt? 'underline' : ''} cursor-pointer hover:underline`}>
           Concept Art
         </a>

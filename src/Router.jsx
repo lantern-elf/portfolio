@@ -11,7 +11,7 @@ const RouterPage = () => {
   return (
     <Routes>
         <Route path="*" element={<NotFound />} />
-        <Route path="/" element={<ConceptArt />} />
+        <Route path="/" element={<Home />} />
         <Route path="/concept-art" element={<ConceptArt />} />
         <Route path="/illustration" element={<Illustration />} />
         <Route path="/about" element={<About />} />

@@ -12,7 +12,7 @@ const Navbar = ({ home = false, illustration = false, aboutMe = false, conceptAr
   }
 
   const links = [
-    // { name: "Home", path: "/", condition: home },
+    { name: "Home", path: "/", condition: home },
     { name: "Concept Art", path: "/concept-art", condition: conceptArt },
     { name: "Illustration", path: "/illustration", condition: illustration },
     { name: "Game", url: "lantern-elf.itch.io/", condition: game },
@@ -65,6 +65,7 @@ const Navbar = ({ home = false, illustration = false, aboutMe = false, conceptAr
       <HamburgerMenu
         isOpen={menuOpen}
         onClose={() => setMenuOpen(false)}
+        home={home}
         conceptArt={conceptArt}
         illustration={illustration}
         about={aboutMe}
