@@ -11,14 +11,14 @@ const About = () => {
 
       <main className="min-h-[94vh] flex flex-col">
         <section className="max-w-5xl mx-auto px-6 md:px-20 lg:px-40 py-4 md:py-16 text-gray-900">
-          <h5 className="md:text-3xl text-3xl mb-4 relative left-0 text-center md:text-left md:left-45">About</h5>
+          <h5 className="text-[1.5rem] mb-4 relative left-0 text-center md:text-left md:left-45">About</h5>
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-5">
             {/* Profile image */}
             <img
-              src="image/profile.png"
-              alt="Your Portrait"
-              className="w-40 h-40 object-cover shadow-2xs"
+              src="image/profile.jpg"
+              alt=""
+              className="w-40 h-40 object-cover shadow-2xs rounded-2xl"
             />
 
             {/* Text content */}
