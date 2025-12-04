@@ -5,7 +5,7 @@ const ArtCard = ({ image, title }) => {
 
   return (
     <div
-      className="relative flex flex-col items-center rounded-2xl overflow-hidden shadow-2xs"
+      className="relative flex flex-col items-center lg:rounded-2xl overflow-hidden shadow-2xs"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
